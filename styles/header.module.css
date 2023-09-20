@@ -1,0 +1,7 @@
+.header{
+    background-color: orange;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
