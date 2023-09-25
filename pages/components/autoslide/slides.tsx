@@ -32,14 +32,18 @@ const AutoSlider = () => {
 
   return (
     <div className={style.sliderContainer}>
-      <button onClick={prevSlide}>이전</button>
+      <button onClick={prevSlide}>
+        <Image src="/img/left_arrow.png" width={50} height={50} alt="화살표" />
+      </button>
       <Image
         src={images[currentSlide]}
-        width={500}
+        width={700}
         height={300}
         alt={`Slide ${currentSlide + 1}`}
       />
-      <button onClick={nextSlide}>다음</button>
+      <button onClick={nextSlide}>
+        <Image src="/img/right_arrow.png" width={50} height={50} alt="화살표" />
+      </button>
     </div>
   );
 };
