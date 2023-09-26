@@ -1,11 +1,27 @@
 import React from 'react';
+import Image from 'next/image';
 import style from '@/styles/header.module.css';
 
 export default function header() {
   return (
     <div className={style.header}>
-      <p>카테고리를 위한 햄버거 이미지 넣기</p>
-      <span>아빠 이번주는 어디가~?</span>
+      <div className={style.hamgerContainer}>
+        <Image
+          className={style.hambergerImage}
+          src="/img/hamgerbar.png"
+          width={700}
+          height={300}
+          alt="카테고리 아이콘"
+        />
+        <span>카테고리</span>
+      </div>
+
+      <Image
+          src="/img/logo.png"
+          width={700}
+          height={300}
+          alt="카테고리 아이콘"
+        />
       <form>
         <label>
           <input placeholder="생각나는 나들이 장소를 검색해보세요." />
